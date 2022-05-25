@@ -4,12 +4,16 @@
   "description": "a demo for electron",
   "main": "main.js",
   "dependencies": {
+    "@electron/remote": "^2.0.8",
     "electron": "^18.2.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "nodemon --watch main.js --exec npm run start"
   },
   "repository": {
     "type": "git",
